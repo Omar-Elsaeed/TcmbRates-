@@ -1,0 +1,31 @@
+CheckList
+
+Id > Auto increment number
+Date > Data date
+Message > If not data exists, that shows if weekend or not exists
+Description > Not exists description
+EntryDateTime > Data collection date
+Status > Data Status
+NumberOfExchangeRates > # Of Exchange Rates in Exchange Rate list
+NumberOfCrossRates > # Of Exchange Rates in Cross Rate list
+ExchangeRates
+
+Id > Auto increment number
+Date > Data date
+CurrencyCode > Currency code like USD/TRY, EUR/TRY etc.
+Unit > Generally 1 but if conversion is too small it my be bigger. JPY/TRY > 100 YEN … TRL
+Currency > Name of the currenct (US DOLLAR,EURO …)
+ForexBuying > If you want to exchange your other currency to TRL, that shows unit based price at forex
+ForexSelling > If you want to exchange TRL to other currency , that shows unit based price at forex
+BanknoteBuying > If you want to exchange your other currency to TRL, that shows unit based price at central bank
+BanknoteSelling > If you want to exchange TRL to other currency , that shows unit based price at central bank
+CrossRates
+
+Id > Auto increment number
+Date > Data date
+CurrencyCode > Currency code like USD/AUD, EUR/USD GBP/USD etc.
+Unit > 1
+Currency > First Currency (if CurrencyCode = GBP/USD , currency will be POUND STERLING)
+CrossRateUSD > If currency is USD, than this field contains data
+CrossRateOther > If currency is different tahn USD (EUR, GBP etc.), than this field contains data
+CrossCurrency > Cross Currency (if CurrencyCode = GBP/USD , cross currency will be US DOLLAR)
